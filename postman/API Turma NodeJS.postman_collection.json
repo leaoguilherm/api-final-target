@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "7a25f740-768d-4832-9a65-27ff07974ab8",
+		"name": "API Turma NodeJS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "617595"
+	},
+	"item": [
+		{
+			"name": "GET LIsta Departamentos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{api_url}}/api/departamentos",
+					"protocol": "http",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"departamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Departamento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://{{api_url}}/api/departamentos/{{id_departamento}}",
+					"protocol": "http",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"departamentos",
+						"{{id_departamento}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Departamentos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Aula11\",\r\n    \"sigla\": \"A11\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{api_url}}/api/departamentos",
+					"protocol": "http",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"departamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Departamentos",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"{{$randomCity}}\",\r\n    \"sigla\": \"CIT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{api_url}}/api/departamentos/{{id_departamento}}",
+					"protocol": "http",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"departamentos",
+						"{{id_departamento}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
